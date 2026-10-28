@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b14">
+  <meta name="description" content="Vedant's resume and developer portfolio showcasing education, technical skills, and experience.">
+  <title>Vedant | Developer Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Go to homepage">
+      <span class="logo-mark">V</span>
+      <span>Vedant<span class="accent">.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="header-resume" id="downloadResume">
+      <i class="fa-solid fa-download"></i> Resume
+    </button>
+  </header>
+
+  <main class="main-container">
+
+    <!-- ================= HOME PAGE ================= -->
+    <section class="page active" id="home">
+      <div class="hero panel">
+        <div class="hero-content">
+          <div class="availability">
+            <span class="status-dot"></span>
+            COMPUTER SCIENCE GRADUATE
+          </div>
+
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+          <h1>Hi, I'm <span class="gradient-text">Vedant.</span></h1>
+
+          <h2 class="hero-subtitle">
+            Aspiring Software Developer
+          </h2>
+
+          <p class="hero-description">
+            I'm a Computer Science graduate interested in software
+            development, mobile applications, databases, and emerging
+            technologies. I'm continuously learning and improving my
+            technical skills.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#skills" class="button button-primary">
+              Explore My Skills <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="button button-secondary">
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <!-- Replace # with your actual profile links -->
+            <a href="#" class="social-link" aria-label="GitHub"
+              data-placeholder-link>
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn"
+              data-placeholder-link>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-orbit orbit-one"></div>
+          <div class="profile-orbit orbit-two"></div>
+
+          <div class="profile-card">
+            <div class="profile-window">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="code-illustration">
+              <span class="code-purple">&lt;</span>
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="code-purple">/&gt;</span>
+            </div>
+
+            <p class="profile-name">Vedant</p>
+            <p class="profile-role">Computer Science</p>
+
+            <div class="profile-tags">
+              <span>Python</span>
+              <span>Kotlin</span>
+              <span>SQL</span>
+            </div>
+          </div>
+
+          <div class="floating-icon floating-python">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <div class="floating-icon floating-code">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="floating-icon floating-database">
+            <i class="fa-solid fa-database"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-stats">
+        <a href="#about" class="stat-card panel">
+          <span class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="stat-title">Education</span>
+          <span class="stat-detail">BSc Computer Science</span>
+        </a>
+
+        <a href="#experience" class="stat-card panel">
+          <span class="stat-icon"><i class="fa-solid fa-briefcase"></i></span>
+          <span class="stat-title">Experience</span>
+          <span class="stat-detail">Python Development Internship</span>
+        </a>
+
+        <a href="#skills" class="stat-card panel">
+          <span class="stat-icon"><i class="fa-solid fa-laptop-code"></i></span>
+          <span class="stat-title">Technical Skills</span>
+          <span class="stat-detail">Languages, Tools & Technologies</span>
+        </a>
+      </div>
+
+      <section class="panel home-note">
+        <div class="section-heading">
+          <span class="heading-icon">
+            <i class="fa-solid fa-compass"></i>
+          </span>
+          <div>
+            <h2>What I'm Interested In</h2>
+            <span class="heading-line"></span>
+          </div>
+        </div>
+
+        <div class="interest-grid">
+          <div class="interest-item">
+            <i class="fa-solid fa-code"></i>
+            <h3>Software Development</h3>
+            <p>Learning programming concepts and building useful software.</p>
+          </div>
+
+          <div class="interest-item">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>App Development</h3>
+            <p>Exploring Android development and mobile application design.</p>
+          </div>
+
+          <div class="interest-item">
+            <i class="fa-solid fa-microchip"></i>
+            <h3>Emerging Technologies</h3>
+            <p>Exploring IoT, Raspberry Pi, and connected devices.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= ABOUT PAGE ================= -->
+    <section class="page" id="about">
+      <section class="panel">
+        <div class="page-intro">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h1>About <span class="gradient-text">Me</span></h1>
+          <p>A little about my background, education, and interests.</p>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-symbol">
+            <div class="about-avatar">V<span>.</span></div>
+            <h2>Vedant</h2>
+            <p>Computer Science Graduate</p>
+            <span class="location-label">
+              <i class="fa-solid fa-location-dot"></i> Goa, India
+            </span>
+          </div>
+
+          <div class="about-content">
+            <h2>My Introduction</h2>
+            <p>
+              I have a background in Computer Science and an interest in
+              software development, programming, databases, and technology.
+              I enjoy learning new tools and applying my knowledge to
+              practical problems.
+            </p>
+            <p>
+              I have also gained exposure to Python development through an
+              internship. My goal is to continue developing my technical
+              abilities and gain more practical experience.
+            </p>
+
+            <div class="about-facts">
+              <div>
+                <span class="fact-label">Education</span>
+                <strong>BSc Computer Science</strong>
+              </div>
+              <div>
+                <span class="fact-label">Field of Interest</span>
+                <strong>Software & App Development</strong>
+              </div>
+              <div>
+                <span class="fact-label">Location</span>
+                <strong>Goa, India</strong>
+              </div>
+            </div>
+
+            <button class="button button-primary" id="aboutResume">
+              <i class="fa-solid fa-file-arrow-down"></i> Print / Save Resume
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <span class="heading-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </span>
+          <div>
+            <h2>Education</h2>
+            <span class="heading-line"></span>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <span class="timeline-label">Undergraduate</span>
+              <h3>BSc Computer Science</h3>
+              <p class="muted">DMC</p>
+              <p>Percentage: 81%</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <span class="timeline-label">Higher Secondary</span>
+              <h3>HSSC — Science</h3>
+              <p class="muted">Government Higher Secondary School, Pernem</p>
+              <p>Percentage: 67% as provided for your application.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <span class="timeline-label">Secondary</span>
+              <h3>SSC</h3>
+              <p class="muted">Viscount of Pernem High School</p>
+              <p>Percentage: 85%</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="small-note">
+          Please verify your HSSC percentage against your marksheet before
+          publishing. Earlier resume information listed a different figure.
+        </p>
+      </section>
+    </section>
+
+    <!-- ================= SKILLS PAGE ================= -->
+    <section class="page" id="skills">
+      <section class="panel">
+        <div class="page-intro">
+          <p class="eyebrow">WHAT I WORK WITH</p>
+          <h1>Technical <span class="gradient-text">Skills</span></h1>
+          <p>Programming languages, software tools, and technologies.</p>
+        </div>
+
+        <div class="section-heading">
+          <span class="heading-icon">
+            <i class="fa-solid fa-code"></i>
+          </span>
+          <div>
+            <h2>Programming Languages & Web Technologies</h2>
+            <span class="heading-line"></span>
+          </div>
+        </div>
+
+        <p class="section-description">
+          Ratings represent my self-assessed familiarity with each skill.
+        </p>
+        <div class="programming-grid" id="programmingSkills"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <span class="heading-icon">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </span>
+          <div>
+            <h2>Applications & Tools</h2>
+            <span class="heading-line"></span>
+          </div>
+        </div>
+
+        <p class="section-description">
+          Software and development tools I'm familiar with.
+        </p>
+        <div class="applications-grid" id="applicationsSkills"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <span class="heading-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </span>
+          <div>
+            <h2>Hardware & Emerging Technologies</h2>
+            <span class="heading-line"></span>
+          </div>
+        </div>
+
+        <p class="section-description">
+          Technologies I'm learning about and exploring.
+        </p>
+        <div class="applications-grid" id="hardwareSkillsContainer"></div>
+      </section>
+
+      <section class="panel rating-note">
+        <i class="fa-solid fa-circle-info"></i>
+        <p>
+          Ratings are fixed display values. Visitors cannot change them by
+          clicking the stars. Ratings can be updated by editing the arrays
+          in <code>script.js</code>.
+        </p>
+      </section>
+    </section>
+
+    <!-- ================= EXPERIENCE PAGE ================= -->
+    <section class="page" id="experience">
+      <section class="panel">
+        <div class="page-intro">
+          <p class="eyebrow">MY PROFESSIONAL JOURNEY</p>
+          <h1>Experience & <span class="gradient-text">Learning</span></h1>
+          <p>Internship experience and technical learning.</p>
+        </div>
+
+        <div class="section-heading">
+          <span class="heading-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </span>
+          <div>
+            <h2>Internship Experience</h2>
+            <span class="heading-line"></span>
+          </div>
+        </div>
+
+        <article class="experience-card">
+          <div class="experience-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <div class="experience-content">
+            <span class="timeline-label">Internship</span>
+            <h3>Python Development Intern</h3>
+            <p class="muted">RV Solutions</p>
+
+            <p>
+              Gained exposure to Python development and the software
+              development workflow through an internship.
+            </p>
+
+            <h4>Areas of Learning</h4>
+            <ul class="feature-list">
+              <li>Python programming and development concepts</li>
+              <li>Working on assigned development tasks</li>
+              <li>Understanding and resolving coding challenges</li>
+              <li>Learning from mentor guidance and feedback</li>
+            </ul>
+
+            <p class="small-note">
+              Add specific tasks, tools, and achievements here only if they
+              accurately reflect your internship experience.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <span class="heading-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </span>
+          <div>
+            <h2>Courses & Certifications</h2>
+            <span class="heading-line"></span>
+          </div>
+        </div>
+
+        <div class="certificate-grid">
+          <article class="certificate-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <h3>MS Office</h3>
+            <p>Office productivity tools</p>
+          </article>
+
+          <article class="certificate-card">
+            <i class="fa-solid fa-file-excel"></i>
+            <h3>Excel</h3>
+            <p>Spreadsheet fundamentals</p>
+          </article>
+
+          <article class="certificate-card">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python Development</h3>
+            <p>Python development course</p>
+          </article>
+
+          <article class="certificate-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Ethical Hacking</h3>
+            <p>Fundamentals of Ethical Hacking</p>
+          </article>
+        </div>
+
+        <p class="small-note">
+          Keep only courses you completed, and add certificate links or dates
+          when you have them.
+        </p>
+      </section>
+    </section>
+
+    <!-- ================= PROJECTS PAGE ================= -->
+    <section class="page" id="projects">
+      <section class="panel">
+        <div class="page-intro">
+          <p class="eyebrow">MY WORK</p>
+          <h1>Projects <span class="gradient-text">Portfolio</span></h1>
+          <p>
+            A space for projects I build as I continue learning and practising.
+          </p>
+        </div>
+
+        <div class="coming-soon">
+          <div class="coming-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <span class="coming-label">CURRENTLY IN PROGRESS</span>
+          <h2>Something is being built.</h2>
+          <p>
+            I'm developing my technical skills and working towards creating
+            practical projects. This page will be updated as my portfolio grows.
+          </p>
+
+          <a href="#skills" class="button button-primary">
+            Explore My Skills <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="future-grid">
+          <article class="future-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>App Development</h3>
+            <p>Future mobile application work.</p>
+          </article>
+
+          <article class="future-card">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Web Development</h3>
+            <p>Future websites and web applications.</p>
+          </article>
+
+          <article class="future-card">
+            <i class="fa-solid fa-microchip"></i>
+            <h3>IoT & Hardware</h3>
+            <p>Future experiments with connected devices.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <!-- ================= CONTACT PAGE ================= -->
+    <section class="page" id="contact">
+      <section class="panel">
+        <div class="page-intro">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h1>Contact <span class="gradient-text">Me</span></h1>
+          <p>
+            Interested in discussing an opportunity or connecting professionally?
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-copy">
+            <h2>Let's talk.</h2>
+            <p>
+              I'm interested in opportunities where I can learn, contribute,
+              and grow my skills in technology and software development.
+            </p>
+
+            <div class="contact-item">
+              <span class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <p>Add your professional email address below.</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
+              <div>
+                <strong>GitHub</strong>
+                <p>Add your GitHub profile link.</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </span>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>Add your LinkedIn profile link if available.</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <h2>Send a message</h2>
+
+            <label for="contactName">Your name</label>
+            <input type="text" id="contactName" name="name"
+              placeholder="Enter your name" required>
+
+            <label for="contactEmail">Your email</label>
+            <input type="email" id="contactEmail" name="email"
+              placeholder="Enter your email" required>
+
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message"
+              rows="5" placeholder="Write your message..." required></textarea>
+
+            <button class="button button-primary" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Prepare Email
+            </button>
+
+            <p class="form-note">
+              This form opens your email application. It does not send or store
+              messages on this website.
+            </p>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <footer class="site-footer">
+      <a href="#home" class="footer-logo">Vedant<span class="accent">.</span></a>
+      <p>Designed to showcase my learning and professional journey.</p>
+      <p class="copyright">
+        © <span id="currentYear"></span> Vedant. All rights reserved.
+      </p>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
