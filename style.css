@@ -1567,3 +1567,87 @@ code {
     break-after: avoid;
   }
 }
+
+
+/* ===== Neon Glow Hover Effects ===== */
+
+/* Cards, skill boxes, and project cards */
+.card,
+.skill-card,
+.project-card,
+.experience-card,
+.info-card,
+.contact-card,
+.stat-card,
+.tool-card,
+.hardware-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+/* Glow when hovering over cards */
+.card:hover,
+.skill-card:hover,
+.project-card:hover,
+.experience-card:hover,
+.info-card:hover,
+.contact-card:hover,
+.stat-card:hover,
+.tool-card:hover,
+.hardware-card:hover {
+    transform: translateY(-6px);
+    border-color: #8b5cf6;
+    box-shadow:
+        0 0 10px rgba(139, 92, 246, 0.35),
+        0 0 25px rgba(99, 102, 241, 0.25),
+        0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Glow for larger page sections */
+section,
+.page-section {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Interactive buttons */
+button,
+.btn,
+.button,
+.social-link {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+button:hover,
+.btn:hover,
+.button:hover,
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.4);
+}
+
+/* Keyboard accessibility */
+.card:focus-visible,
+.skill-card:focus-visible,
+.project-card:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.social-link:focus-visible {
+    outline: 2px solid #a78bfa;
+    outline-offset: 4px;
+}
+
+/* Disable movement for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
