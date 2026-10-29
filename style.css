@@ -1746,3 +1746,36 @@ a.social-link:hover {
     }
 }
 
+
+/* ===== FIX: HOME PAGE CARDS ONLY ===== */
+
+/* Remove glow from the Home page's parent containers */
+#home .home-content:hover,
+#home .hero-content:hover,
+#home .highlights:hover,
+#home .highlights-grid:hover,
+#home .summary-grid:hover,
+#home .cards-container:hover {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    transform: none !important;
+}
+
+/* Keep the glow limited to individual Home page cards */
+#home .card:hover,
+#home .highlight-card:hover,
+#home .summary-card:hover,
+#home .stat-card:hover {
+    box-shadow:
+        0 0 10px rgba(139, 92, 246, 0.45),
+        0 0 22px rgba(99, 102, 241, 0.30) !important;
+    border-color: #8b5cf6 !important;
+    transform: translateY(-5px);
+}
+
+/* Prevent the Home page background itself from glowing */
+#home:hover {
+    box-shadow: none !important;
+}
+
+
