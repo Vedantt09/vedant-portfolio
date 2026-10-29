@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,8 @@
   <title>Vedant | Developer Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -43,7 +46,7 @@
 
   <main class="main-container">
 
-    <!-- HOME PAGE -->
+    <!-- ================= HOME PAGE ================= -->
     <section class="page active" id="home">
       <div class="hero panel">
         <div class="hero-content">
@@ -53,8 +56,12 @@
           </div>
 
           <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
           <h1>Hi, I'm <span class="gradient-text">Vedant.</span></h1>
-          <h2 class="hero-subtitle">Aspiring Software Developer</h2>
+
+          <h2 class="hero-subtitle">
+            Aspiring Software Developer
+          </h2>
 
           <p class="hero-description">
             I'm a Computer Science graduate interested in software
@@ -67,10 +74,13 @@
             <a href="#skills" class="button button-primary">
               Explore My Skills <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="#contact" class="button button-secondary">Contact Me</a>
+            <a href="#contact" class="button button-secondary">
+              Contact Me
+            </a>
           </div>
 
           <div class="hero-socials">
+            <!-- Replace # with your actual profile links -->
             <a href="#" class="social-link" aria-label="GitHub"
               data-placeholder-link>
               <i class="fa-brands fa-github"></i>
@@ -141,7 +151,9 @@
 
       <section class="panel home-note">
         <div class="section-heading">
-          <span class="heading-icon"><i class="fa-solid fa-compass"></i></span>
+          <span class="heading-icon">
+            <i class="fa-solid fa-compass"></i>
+          </span>
           <div>
             <h2>What I'm Interested In</h2>
             <span class="heading-line"></span>
@@ -170,7 +182,7 @@
       </section>
     </section>
 
-    <!-- ABOUT PAGE -->
+    <!-- ================= ABOUT PAGE ================= -->
     <section class="page" id="about">
       <section class="panel">
         <div class="page-intro">
@@ -227,7 +239,9 @@
 
       <section class="panel">
         <div class="section-heading">
-          <span class="heading-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="heading-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </span>
           <div>
             <h2>Education</h2>
             <span class="heading-line"></span>
@@ -273,7 +287,7 @@
       </section>
     </section>
 
-    <!-- SKILLS PAGE -->
+    <!-- ================= SKILLS PAGE ================= -->
     <section class="page" id="skills">
       <section class="panel">
         <div class="page-intro">
@@ -283,18 +297,26 @@
         </div>
 
         <div class="section-heading">
-          <span class="heading-icon"><i class="fa-solid fa-code"></i></span>
+          <span class="heading-icon">
+            <i class="fa-solid fa-code"></i>
+          </span>
           <div>
             <h2>Programming Languages & Web Technologies</h2>
             <span class="heading-line"></span>
           </div>
         </div>
+
+        <p class="section-description">
+          Ratings represent my self-assessed familiarity with each skill.
+        </p>
         <div class="programming-grid" id="programmingSkills"></div>
       </section>
 
       <section class="panel">
         <div class="section-heading">
-          <span class="heading-icon"><i class="fa-solid fa-table-cells-large"></i></span>
+          <span class="heading-icon">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </span>
           <div>
             <h2>Applications & Tools</h2>
             <span class="heading-line"></span>
@@ -309,7 +331,9 @@
 
       <section class="panel">
         <div class="section-heading">
-          <span class="heading-icon"><i class="fa-solid fa-microchip"></i></span>
+          <span class="heading-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </span>
           <div>
             <h2>Hardware & Emerging Technologies</h2>
             <span class="heading-line"></span>
@@ -321,9 +345,18 @@
         </p>
         <div class="applications-grid" id="hardwareSkillsContainer"></div>
       </section>
+
+      <section class="panel rating-note">
+        <i class="fa-solid fa-circle-info"></i>
+        <p>
+          Ratings are fixed display values. Visitors cannot change them by
+          clicking the stars. Ratings can be updated by editing the arrays
+          in <code>script.js</code>.
+        </p>
+      </section>
     </section>
 
-    <!-- EXPERIENCE PAGE -->
+    <!-- ================= EXPERIENCE PAGE ================= -->
     <section class="page" id="experience">
       <section class="panel">
         <div class="page-intro">
@@ -333,7 +366,9 @@
         </div>
 
         <div class="section-heading">
-          <span class="heading-icon"><i class="fa-solid fa-briefcase"></i></span>
+          <span class="heading-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </span>
           <div>
             <h2>Internship Experience</h2>
             <span class="heading-line"></span>
@@ -373,7 +408,9 @@
 
       <section class="panel">
         <div class="section-heading">
-          <span class="heading-icon"><i class="fa-solid fa-certificate"></i></span>
+          <span class="heading-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </span>
           <div>
             <h2>Courses & Certifications</h2>
             <span class="heading-line"></span>
@@ -413,7 +450,7 @@
       </section>
     </section>
 
-    <!-- PROJECTS PAGE -->
+    <!-- ================= PROJECTS PAGE ================= -->
     <section class="page" id="projects">
       <section class="panel">
         <div class="page-intro">
@@ -425,7 +462,10 @@
         </div>
 
         <div class="coming-soon">
-          <div class="coming-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="coming-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
           <span class="coming-label">CURRENTLY IN PROGRESS</span>
           <h2>Something is being built.</h2>
           <p>
@@ -460,7 +500,7 @@
       </section>
     </section>
 
-    <!-- CONTACT PAGE -->
+    <!-- ================= CONTACT PAGE ================= -->
     <section class="page" id="contact">
       <section class="panel">
         <div class="page-intro">
@@ -480,7 +520,9 @@
             </p>
 
             <div class="contact-item">
-              <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
               <div>
                 <strong>Email</strong>
                 <p>Add your professional email address below.</p>
@@ -488,7 +530,9 @@
             </div>
 
             <div class="contact-item">
-              <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+              <span class="contact-icon">
+                <i class="fa-brands fa-github"></i>
+              </span>
               <div>
                 <strong>GitHub</strong>
                 <p>Add your GitHub profile link.</p>
@@ -496,7 +540,9 @@
             </div>
 
             <div class="contact-item">
-              <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span class="contact-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </span>
               <div>
                 <strong>LinkedIn</strong>
                 <p>Add your LinkedIn profile link if available.</p>
