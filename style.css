@@ -1651,3 +1651,98 @@ button:focus-visible,
         animation-duration: 0.01ms !important;
     }
 }
+
+
+/* ===== UNIVERSAL CARD & SUBSECTION GLOW ===== */
+
+/* Apply smooth hover effects to common card elements */
+.card,
+[class*="card"],
+[class*="skill"],
+[class*="project"],
+[class*="experience"],
+[class*="education"],
+[class*="internship"],
+[class*="tool"],
+[class*="hardware"],
+[class*="certificate"],
+[class*="achievement"],
+[class*="stat"],
+[class*="info"],
+[class*="detail"],
+[class*="item"] {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Purple-blue glow on hover */
+.card:hover,
+[class*="card"]:hover,
+[class*="skill"]:hover,
+[class*="project"]:hover,
+[class*="experience"]:hover,
+[class*="education"]:hover,
+[class*="internship"]:hover,
+[class*="tool"]:hover,
+[class*="hardware"]:hover,
+[class*="certificate"]:hover,
+[class*="achievement"]:hover,
+[class*="stat"]:hover,
+[class*="info"]:hover,
+[class*="detail"]:hover,
+[class*="item"]:hover {
+    border-color: #8b5cf6;
+    box-shadow:
+        0 0 8px rgba(139, 92, 246, 0.45),
+        0 0 20px rgba(99, 102, 241, 0.30),
+        inset 0 0 12px rgba(139, 92, 246, 0.06);
+}
+
+/* Individual subsection panels */
+.about-content > *,
+.skills-content > *,
+.projects-grid > *,
+.experience-content > *,
+.education-content > *,
+.contact-content > * {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.about-content > *:hover,
+.skills-content > *:hover,
+.projects-grid > *:hover,
+.experience-content > *:hover,
+.education-content > *:hover,
+.contact-content > *:hover {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
+}
+
+/* Glow for buttons and social icons */
+button:hover,
+.btn:hover,
+.social-link:hover,
+a.social-link:hover {
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.45);
+}
+
+/* Avoid hover effects on touchscreens and reduce-motion devices */
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    [class*="card"],
+    [class*="skill"],
+    [class*="project"],
+    [class*="experience"],
+    [class*="education"],
+    [class*="internship"],
+    [class*="tool"],
+    [class*="hardware"],
+    [class*="item"] {
+        transition: none;
+    }
+}
+
