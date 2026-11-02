@@ -1743,3 +1743,7 @@ code {
     text-align: center;
     flex-shrink: 0;
 }
+
+#skills .application-card > .application-icon {
+    outline: 3px solid red !important;
+}
