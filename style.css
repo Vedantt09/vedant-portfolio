@@ -1732,13 +1732,3 @@ code {
     transform: translateY(-6px) !important;
 }
 
-/* Fix icon alignment in Applications and Hardware cards */
-.application-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    flex-shrink: 0;
-}
