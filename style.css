@@ -1731,23 +1731,3 @@ code {
 #projects .future-card:hover {
     transform: translateY(-6px) !important;
 }
-
-/* FIX: Keep application and hardware icons inside their cards */
-#skills #applicationsSkills .application-card > .skill-tech-icon,
-#skills #hardwareSkillsContainer .application-card > .skill-tech-icon {
-    display: grid !important;
-    place-items: center !important;
-
-    width: 43px !important;
-    height: 43px !important;
-    min-width: 43px !important;
-    min-height: 43px !important;
-
-    flex: 0 0 43px !important;
-    flex-shrink: 0 !important;
-
-    position: relative !important;
-    margin: 0 !important;
-    transform: none !important;
-    box-sizing: border-box !important;
-}
