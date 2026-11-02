@@ -1,160 +1,96 @@
-/* 9. EXPERIENCE — Internship Experience card */
-#experience .experience-card:hover {
-    border-color: #a78bfa;
-    background: rgba(167, 139, 250, 0.06);
-    box-shadow:
-        0 0 15px rgba(167, 139, 250, 0.42),
-        0 0 30px rgba(96, 165, 250, 0.2);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #090b14;
+  --panel: rgba(18, 22, 38, 0.88);
+  --panel-light: #151a2b;
+  --border: rgba(153, 163, 204, 0.15);
+  --text: #f3f4fb;
+  --muted: #9ba3bd;
+  --accent: #a78bfa;
+  --accent-2: #60a5fa;
+  --success: #55e6ad;
+  --radius: 20px;
+  --shadow: 0 18px 55px rgba(0, 0, 0, 0.2);
 }
 
-/* 10. EXPERIENCE — Four Courses & Certifications cards */
-#experience .certificate-card:hover {
-    border-color: #a78bfa;
-    background: rgba(167, 139, 250, 0.07);
-    box-shadow:
-        0 0 13px rgba(167, 139, 250, 0.42),
-        0 0 26px rgba(96, 165, 250, 0.2);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* 11. PROJECTS — Something is being built section */
-#projects .coming-soon:hover {
-    border-color: rgba(167, 139, 250, 0.9);
-    box-shadow:
-        0 0 16px rgba(167, 139, 250, 0.4),
-        0 0 32px rgba(96, 165, 250, 0.2);
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
-/* 12. PROJECTS — Three cards below that section */
-#projects .future-card:hover {
-    border-color: #a78bfa;
-    background: rgba(167, 139, 250, 0.07);
-    box-shadow:
-        0 0 13px rgba(167, 139, 250, 0.42),
-        0 0 26px rgba(96, 165, 250, 0.2);
-}
-
-
-/* Smooth upward movement with glow on hover */
-
-#home .profile-card,
-#home .stat-card,
-#home .interest-item,
-#about .about-symbol,
-#about .timeline-card,
-#skills #programmingSkills .skill-item,
-#skills #applicationsSkills .application-card,
-#skills #hardwareSkillsContainer .application-card,
-#experience .experience-card,
-#experience .certificate-card,
-#projects .coming-soon,
-#projects .future-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease,
-                border-color 0.3s ease;
-}
-
-#home .profile-card:hover,
-#home .stat-card:hover,
-#home .interest-item:hover,
-#about .about-symbol:hover,
-#about .timeline-card:hover,
-#skills #programmingSkills .skill-item:hover,
-#skills #applicationsSkills .application-card:hover,
-#skills #hardwareSkillsContainer .application-card:hover,
-#experience .experience-card:hover,
-#experience .certificate-card:hover,
-#projects .coming-soon:hover,
-#projects .future-card:hover {
-    transform: translateY(-6px) !important;
-}
-
-/* ==========================================
-   SKILLS SECTION — icon/category presentation
-   Appended overrides only; original page effects remain intact.
-========================================== */
-#skills .programming-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-#skills #programmingSkills .skill-item {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  min-height: 78px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-              border-color 0.3s ease, background 0.3s ease;
-}
-
-#skills .skill-tech-icon,
-#skills .application-icon {
-  display: grid;
-  place-items: center;
-  flex: 0 0 43px;
-  width: 43px;
-  height: 43px;
-  border-radius: 12px;
-  background: rgba(167, 139, 250, 0.12);
-  color: var(--accent);
-  font-size: 21px;
-  transition: color 0.3s ease, background 0.3s ease;
-}
-
-#skills .skill-details {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  gap: 4px;
-}
-
-#skills .skill-name,
-#skills .application-name {
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--bg);
   color: var(--text);
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.35;
-  overflow-wrap: anywhere;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
 }
 
-#skills .skill-category {
-  display: inline-block;
-  width: fit-content;
-  max-width: 100%;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
+body, button, input, textarea {
+  font-family: 'Inter', sans-serif;
 }
 
-#skills #applicationsSkills .application-card,
-#skills #hardwareSkillsContainer .application-card {
-  gap: 9px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-              border-color 0.3s ease, background 0.3s ease;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-#skills #applicationsSkills .skill-tech-icon,
-#skills #hardwareSkillsContainer .skill-tech-icon {
-  flex: 0 0 43px;
+button {
+  color: inherit;
 }
 
-#skills #programmingSkills .skill-item:hover,
-#skills #applicationsSkills .application-card:hover,
-#skills #hardwareSkillsContainer .application-card:hover {
-  border-color: #a78bfa;
-  background: rgba(167, 139, 250, 0.07);
-  box-shadow: 0 0 13px rgba(167, 139, 250, 0.42),
-              0 0 26px rgba(96, 165, 250, 0.2);
-  transform: translateY(-6px) !important;
+button, a, input, textarea {
+  -webkit-tap-highlight-color: transparent;
 }
 
-@media (max-width: 560px) {
-  #skills .programming-grid {
-    grid-template-columns: 1fr;
-  }
-  #skills #applicationsSkills,
-  #skills #hardwareSkillsContainer {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  #skills #applicationsSkills .application-card,
-  #skills #hardwareSkillsContainer .application-card {
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: rgba(167, 139, 250, 0.35);
+  color: #fff;
+}
+
+.background-glow {
+  position: fixed;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.13;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glow-one {
+  top: 70px;
+  left: -150px;
+  background: #7448ff;
+}
+
+.glow-two {
+  right: -150px;
+  top: 45%;
+  background: #167bd7;
+}
+
+/* HEADER AND NAVIGATION */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
