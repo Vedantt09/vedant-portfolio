@@ -4,10 +4,10 @@
 
 // Add your real professional email address here.
 // The contact form uses it to prepare an email.
-const CONTACT_EMAIL = "";
+const CONTACT_EMAIL = "vedantnagvekar2020@gmail.com";
 
 // Add your actual profile links here.
-const GITHUB_URL = "";
+const GITHUB_URL = "https://github.com/Vedantt09";
 const LINKEDIN_URL = "";
 
 /* ==========================================
